@@ -22,4 +22,7 @@ git log historia.txt : muestra el historial del archivo, los commits realizados 
 git add historia.txt : añade al stage el archivo o archivos que tienen cambios o modificaciones, siempre hacer git add antes de un commit
 
 
+git show historiaGit.txt: muestra los cambios ocurridos sobre el archivo
+
+
 
