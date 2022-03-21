@@ -13,4 +13,13 @@ git config --global user.name "Antonio Peña" : para modificar el usuario y que 
 git config --global user.email "sirantoniog@gmail.com" : para establecer el email del usuario en sirantoniog@gmail.com
 
 
+Comandos basicos:
+
+git status : para ver el estado del repositorio si hay cambios o commits pendientes
+
+git log historia.txt : muestra el historial del archivo, los commits realizados en este, los cambios qrealizados en cada uno
+
+git add historia.txt : añade al stage el archivo o archivos que tienen cambios o modificaciones, siempre hacer git add antes de un commit
+
+
 
