@@ -28,3 +28,12 @@ git diff indicadorcommit1 indicadoridcommit2 : para ver las diferencias entre el
 
 *****como ejercio verificar diferencias entre uno y otro commit*******
 
+git log --oneline :  muestra en una linea los commits realizados
+por ejemplo:
+919f10b Se escribe una sugerencia: *****como ejercio verificar diferencias entre uno y otro commit*******
+58eb198 Agregado el la funcionalidad del comando git diff en el archivo historiaGit.tx
+4ae3b9a Agregado otro comando y su funcionalidad, comando git show
+d59ffba Se ha cambiado el nombre del archivo historia.txt por historiaGit.txt
+1784cc3 Agregado los comandos basicos como status, log, add al archivo historia.txt
+20c1db5 Agregadas instrucciones de configuracion en el archivo historia.txt
+63b8d7b Archivo historia.txt creado
