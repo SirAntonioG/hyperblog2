@@ -1,0 +1,16 @@
+No olvidar configurar el git con nombre del usuario y el correo.
+
+git config : para ver las configuraciones que se puede hacer
+
+git config --list : se ve la configuracion por defecto de git
+
+git config --list --show-origin : para ver donde estan guardadas las configuraciones
+
+git config --global : significa que cambiaremos en las variables globales de la configuracion
+
+git config --global user.name "Antonio Peña" : para modificar el usuario y que su nombre sea Antonio Peña
+
+git config --global user.email "sirantoniog@gmail.com" : para establecer el email del usuario en sirantoniog@gmail.com
+
+
+
