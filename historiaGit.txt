@@ -75,3 +75,5 @@ git pull origin main : para traer lo del repositorio remoto al repositorio local
 git pull origin main --allow-unrelated-histories : permite traer el repositorio remoto fusionando lo que tiene el remoto con lo que se tiene en local, sin el problema de las historias no relacionadas
 
 git push origin main : sube lo que esta en el repositorio local al repositorio remoto
+
+SIEMPRE HACER UN PULL DEL REPOSITORIO REMOTO ANTES DE HACER UN PUCH
