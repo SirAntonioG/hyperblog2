@@ -39,8 +39,39 @@ d59ffba Se ha cambiado el nombre del archivo historia.txt por historiaGit.txt
 63b8d7b Archivo historia.txt creado
 
 
-git reset indicadorcommit --hard : todo regresa al estadfo anterior
+git reset indicadorcommit --hard : todo regresa al estado anterior
 git reset indicadorcommit --soft : volvemos a la version anterior pero en lo que esta en el staging si que ahi 
 
 
+*****Proceso para conectarse con repositorio remoto*******
+CREAR LLAVES SSH PUBLICA Y PRIVADA POR CADA REPOSITORIO/DISPOSITIVO
+//Conectarse con SSH que es mucho mas seguro que HTTPS, conectarse con la llave puclica al GitHub
+**generar las llaves SSH
+ssh-keygen -t rsa -b 4096 -C "sirantoniog@gmail.com" : para generar las llaves de SSH, deben asegurarse de esar en el home del sistema
 
+**verificar que este corriendo el agente ssh
+eval $(ssh-agent -s) : evalua que el comando se ha disparado, en este caso que el agente ssh este corriendo
+
+**agregar la llave privada creada al sistema. ojooooo ojoooo nunca mostrar la llave privada 
+ssh-add ~/.ssh/id_rsa : añade la llave al entorno en este caso linux o windows
+
+vim config : para crear el archivo config necesario en el entorno MAC, el archivo no tiene extension simplemente su nombre config
+en el archivo colocar:
+
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentifyFile ~/.ssh/id_rsa
+
+ssh-add -K ~/.ssh/id_rsa : añade la llave al entorno mac, -K es porque en mac tiene un espacio donde guarda contraseñas, en caso de dar error quitar el -K
+
+//Conectar repositorio local con el remoto
+git remote add origin https://github.com/SirAntonioG/hyperblog2.git : agrega un origen remoto para nuestros archivo, en este caso usando el protocolo HTTPS de nuestro repositorio remoto
+
+git remote -v : muestra la url de los repositorios, para cambiarlo usar git remote set-url
+git remote set-url origin git@github.com:SirAntonioG/hyperblog2.git : cambia la url del repositorio remoto en este caso es con el protocolo SSH
+
+git pull origin main : para traer lo del repositorio remoto al repositorio local
+git pull origin main --allow-unrelated-histories : permite traer el repositorio remoto fusionando lo que tiene el remoto con lo que se tiene en local, sin el problema de las historias no relacionadas
+
+git push origin main : sube lo que esta en el repositorio local al repositorio remoto
