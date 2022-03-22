@@ -37,3 +37,10 @@ d59ffba Se ha cambiado el nombre del archivo historia.txt por historiaGit.txt
 1784cc3 Agregado los comandos basicos como status, log, add al archivo historia.txt
 20c1db5 Agregadas instrucciones de configuracion en el archivo historia.txt
 63b8d7b Archivo historia.txt creado
+
+
+git reset indicadorcommit --hard : todo regresa al estadfo anterior
+git reset indicadorcommit --soft : volvemos a la version anterior pero en lo que esta en el staging si que ahi 
+
+
+
