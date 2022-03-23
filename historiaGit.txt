@@ -99,3 +99,9 @@ git tag -d nombreTag : para eliminar el tag nombreTag, no olvidar hacer el push 
 
 git push origin :refs/TAGS : es una sintaxis interna que borra la referencia al origen respecto a la referencia local con la que se conecto el tag borrado anteriormente.
 
+//mas comando de ramas
+git show-branch : muestra las ramas que existe y cual es su historia
+git show-branch --all : mustra algo similar con mas datos
+
+gitk : muestra una versiojn visual de las ramas en windows
+
