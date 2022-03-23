@@ -76,4 +76,19 @@ git pull origin main --allow-unrelated-histories : permite traer el repositorio 
 
 git push origin main : sube lo que esta en el repositorio local al repositorio remoto
 
-SIEMPRE HACER UN PULL DEL REPOSITORIO REMOTO ANTES DE HACER UN PUCH
+SIEMPRE HACER UN PULL DEL REPOSITORIO REMOTO ANTES DE HACER UN PUSH
+
+// historia del proyecto de manera decorada
+git log --all : muestra todo lo hecho historicamente
+git log --all --graph : muestra graficamente las ramas
+git log --all --graph --decorate --oneline : muestra todo el log la historia de manera decorada
+
+**agregar un alias a este comando largo
+alias arbolito="git log --all --graph --decorate --oneline"
+
+//crear tags
+git tag -a v0.1 -m "Resultado de las primeras clases del curso" 5e2882c : crea el tag v0.1 con un el mensaje (resultado de las pri....) diendo que el tag esta en el hash 5e2882c
+
+git tag : muestra una lista de los tags existentes
+
+git show-ref --tags : muestra las referencias de los tags, muestra a que hash o commit estan asignados los tags
