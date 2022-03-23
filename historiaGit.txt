@@ -92,3 +92,10 @@ git tag -a v0.1 -m "Resultado de las primeras clases del curso" 5e2882c : crea e
 git tag : muestra una lista de los tags existentes
 
 git show-ref --tags : muestra las referencias de los tags, muestra a que hash o commit estan asignados los tags
+
+git push origin --tags : para enviar los tags creados al repositorio remoto (arigin)
+
+git tag -d nombreTag : para eliminar el tag nombreTag, no olvidar hacer el push de los tags, aunque el tag en el remoto no se borra es porque los tags se usan cono releases, para borrarlo:
+
+git push origin :refs/TAGS : es una sintaxis interna que borra la referencia al origen respecto a la referencia local con la que se conecto el tag borrado anteriormente.
+
