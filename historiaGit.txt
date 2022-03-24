@@ -105,3 +105,8 @@ git show-branch --all : mustra algo similar con mas datos
 
 gitk : muestra una versiojn visual de las ramas en windows
 
+
+//clonar un repositorio en el que vas a colaborar y eres colaborador
+git clon git@github.com:SirAntonioG/hyperblog2.git
+
+
