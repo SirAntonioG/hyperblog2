@@ -14,3 +14,5 @@ git config --global user.email "sirantoniog@gmail.com" : para establecer el emai
 
 
 
+Con el otro usuario modifico el archivo historia.txt
+
