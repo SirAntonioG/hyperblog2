@@ -103,7 +103,7 @@ git push origin :refs/TAGS : es una sintaxis interna que borra la referencia al 
 git show-branch : muestra las ramas que existe y cual es su historia
 git show-branch --all : mustra algo similar con mas datos
 
-gitk : muestra una versiojn visual de las ramas en windows
+gitk : muestra una versión visual de las ramas en el GitBash de Windows
 
 
 //clonar un repositorio en el que vas a colaborar y eres colaborador
